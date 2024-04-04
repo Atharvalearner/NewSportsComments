@@ -37,18 +37,18 @@ public class ReplacerFragment extends Fragment {
         frameLayout = view.findViewById(R.id.frameLayout);
 
         if (savedInstanceState == null) {
-            showInitialFragment();
+//            showInitialFragment();
         }
     }
 
-    private void showInitialFragment() {
-        boolean isComment = requireActivity().getIntent().getBooleanExtra("isComment", false);
-        if (isComment) {
-            showFragment(new CommentFragment(), TAG_COMMENT_FRAGMENT);
-        } else {
-            showFragment(new LoginFragment(), TAG_LOGIN_FRAGMENT);
-        }
-    }
+//    private void showInitialFragment() {
+//        boolean isComment = requireActivity().getIntent().getBooleanExtra("isComment", false);
+//        if (isComment) {
+//            showFragment(new CommentFragment(), TAG_COMMENT_FRAGMENT);
+//        } else {
+//            showFragment(new LoginFragment(), TAG_LOGIN_FRAGMENT);
+//        }
+//    }
 
     private void showFragment(Fragment fragment, String tag) {
         FragmentTransaction transaction = requireActivity().getSupportFragmentManager().beginTransaction();

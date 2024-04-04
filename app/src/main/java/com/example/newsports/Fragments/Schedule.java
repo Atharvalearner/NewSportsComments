@@ -1,66 +1,59 @@
 package com.example.newsports.Fragments;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.example.newsports.Adapter.EventAdapter;
 import com.example.newsports.R;
+import com.example.newsports.Models.EventModel;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link Schedule#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
+
 public class Schedule extends Fragment {
+    RecyclerView recycle_view;
+    EventAdapter adapter;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public Schedule() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment Schedule.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static Schedule newInstance(String param1, String param2) {
-        Schedule fragment = new Schedule();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_schedule, container, false);
+        View view= inflater.inflate(R.layout.fragment_schedule, container, false);
+        recycle_view=view.findViewById(R.id.recycle_view);
+        recycle_view.setLayoutManager(new LinearLayoutManager(getContext()));
+
+        List<EventModel> eventModelList=getEventList();
+        adapter=new EventAdapter(getContext(),eventModelList);
+        recycle_view.setAdapter(adapter);
+
+        return view;
+    }
+
+    private List<EventModel> getEventList() {
+        List<EventModel> eventList = new ArrayList<>();
+        // Add your event data here
+        eventList.add(new EventModel(1,R.drawable.cricket1,"Cricket","April 10, 2024","Gandhi Cricket Ground"));
+        eventList.add(new EventModel(2,R.drawable.volleyball,"Volleyball","April 20, 2024","Community Center Gymnasium"));
+        eventList.add(new EventModel(3,R.drawable.badmintoon,"Badminton","April 15, 2024","Sunshine Badminton Club"));
+        eventList.add(new EventModel(4,R.drawable.football,"Football","April 22, 2024","City Stadium"));
+        eventList.add(new EventModel(5,R.drawable.tennis,"Tennis","May 2, 2024","Central Tennis Club"));
+        eventList.add(new EventModel(6,R.drawable.swimming,"Swimming","May 5, 2024"," City Aquatic Center"));
+        eventList.add(new EventModel(7,R.drawable.cycling,"Cycling Race","April 9, 2024","Greenway Park"));
+        eventList.add(new EventModel(8,R.drawable.road_race,"Road Race","April 12, 2024","Downtown Plaza"));
+        // Add more events as needed
+        return eventList;
     }
 }
