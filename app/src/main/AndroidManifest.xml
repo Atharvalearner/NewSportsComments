@@ -30,7 +30,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".DetailsFragment"
+            android:name=".DetailsActivity"
             android:exported="false" />
 
         <activity

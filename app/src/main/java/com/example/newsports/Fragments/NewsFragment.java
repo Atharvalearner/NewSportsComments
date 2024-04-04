@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.newsports.DetailsFragment;
+import com.example.newsports.DetailsActivity;
 import com.example.newsports.RequestManager;
 import com.example.newsports.Models.NewsApiResponse;
 import com.example.newsports.Models.NewsHeadlines;
@@ -90,6 +90,6 @@ public class NewsFragment extends Fragment implements SelectListener {
     }
     @Override
     public void OnNewsClicked(NewsHeadlines headlines) {
-        startActivity(new Intent(getActivity(), DetailsFragment.class).putExtra("data",headlines));
+        startActivity(new Intent(getActivity(), DetailsActivity.class).putExtra("data",headlines));
     }
 }
