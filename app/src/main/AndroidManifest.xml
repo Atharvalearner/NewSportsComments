@@ -26,6 +26,14 @@
             android:exported="false" />
 
         <activity
+            android:name=".DetailsFragment"
+            android:exported="false" />
+
+        <activity
+            android:name=".WebView"
+            android:exported="false" />
+
+        <activity
             android:name=".Authentications.Landing_Page"
             android:exported="true">
             <intent-filter>
