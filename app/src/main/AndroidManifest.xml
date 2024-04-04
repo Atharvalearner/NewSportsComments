@@ -22,6 +22,10 @@
             android:name=".Authentications.SignupTabFragment"
             android:exported="false" />
 
+        <activity
+            android:name=".Fragments.NewsFragment"
+            android:exported="false" />
+
         <activity android:name=".SportsDetails"
             android:exported="false" />
 
