@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SportsDetails"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="710dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_event"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/cricket1"
+            />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/text_sport_name"
+            android:layout_width="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:layout_height="wrap_content"
+            android:text="Cricket"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_event" />
+
+        <TextView
+            android:layout_marginTop="25dp"
+            android:id="@+id/text_organizers"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textAlignment="viewStart"
+            android:text="It is Organized by local association in collaboration with the city council."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_sport_name" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="April 10, 2024"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_organizers" />
+
+        <TextView
+            android:id="@+id/text_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Stadium A"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_date" />
+
+        <TextView
+            android:id="@+id/text_description"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:fontFamily="sans-serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Th Championship is an annual tournament organized by XYZ Sports Club, aimed at promoting this sport at the grassroots level. The tournament follows a league-cum-knockout format, with 16 teams from the local area competing for the championship title. It providing an exciting atmosphere for players and spectators alike to showcase the passion and talent within our community.. The event encourages fair play and sportsmanship, with strict adherence to the rules and regulations of the game."
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_location" />
+
+        <TextView
+            android:id="@+id/text_winners"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Previous Winners are:- 2023: Titans Club, 2022: City Lions Club,2021: Royal Kings Club"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_description" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/normal_text"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="For more detail Contact: "
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-medium"></TextView>
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:id="@+id/number"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9834154073"
+                android:textSize="16dp"
+                android:autoLink="phone"
+                android:onClick="onPhoneNumberClicked"
+                android:textColor="@color/purple_700"
+                android:fontFamily="sans-serif-medium"></TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
