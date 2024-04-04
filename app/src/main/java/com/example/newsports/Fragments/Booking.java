@@ -6,23 +6,30 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
+import androidx.viewpager.widget.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
+import com.example.newsports.Adapter.ImageAdapter;
 import com.example.newsports.R;
 import com.example.newsports.WebView;
+import com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator;
 
 public class Booking extends Fragment {
     ImageView imageView1,imageView2,imageView3,imageView4;
+    SpringDotsIndicator dot2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view=inflater.inflate(R.layout.fragment_booking, container, false);
+        ViewPager viewPager=(ViewPager) view.findViewById(R.id.viewPage);
+        dot2=view.findViewById(R.id.dots_indicator);
+        ImageAdapter adapter=new ImageAdapter(getContext());
+        viewPager.setAdapter(adapter);
+        dot2.setViewPager(viewPager);
 
         imageView1 = view.findViewById(R.id.imageView1);
         imageView2 = view.findViewById(R.id.imageView2);
