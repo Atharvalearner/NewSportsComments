@@ -29,7 +29,17 @@
         android:id="@+id/nav_news"
         android:name="com.example.newsports.Fragments.NewsFragment"
         android:label="@string/menu_news"
-        tools:layout="@layout/fragment_news" />
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_nav_news_to_nav_booking"
+            app:destination="@id/nav_booking" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_booking"
+        android:name="com.example.newsports.Fragments.Booking"
+        android:label="Booking"
+        tools:layout="@layout/fragment_booking" />
 
     <fragment
         android:id="@+id/navigation_home"

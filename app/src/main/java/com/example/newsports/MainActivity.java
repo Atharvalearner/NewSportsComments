@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         contentView = findViewById(R.id.content_view);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_profile, R.id.nav_store, R.id.nav_news,R.id.nav_logout)
+                R.id.nav_profile, R.id.nav_store, R.id.nav_news,R.id.nav_booking,R.id.nav_logout)
                 .setDrawerLayout(drawer)
                 .build();
 
