@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_collaboration.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Fragments.About">
+
+    <TextView
+        android:id="@+id/text_about_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:text="Welcome to SportNet!\n\nSportNet connects coaches with athletes, providing a platform for effective communication and collaboration.\n\nWe believe in the power of sports to transform lives, and our mission is to empower athletes and coaches to achieve their goals through our platform."
+        android:textSize="18sp" />
+
+</RelativeLayout>

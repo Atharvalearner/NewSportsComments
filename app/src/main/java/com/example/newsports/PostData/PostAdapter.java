@@ -76,32 +76,8 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
                     .into(holder.imageView);
         }
 
-        // Check if the post is an image or video
-//        if (PostDisplayModel.getImageUrl() != null && PostDisplayModel.getImageUrl().endsWith(".mp4")) {
-//            holder.imageView.setVisibility(View.GONE);
-//            holder.videoView.setVisibility(View.VISIBLE);
-//            initializePlayer(holder.videoView, Uri.parse(PostDisplayModel.getImageUrl()));
-//
-//            // Set OnClickListener for the video view
-//            holder.videoView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    // Open VideoActivity
-//                    Intent intent = new Intent(context, VideoActivity.class);
-//                    intent.putExtra("VIDEO_URL", PostDisplayModel.getImageUrl());
-//                    context.startActivity(intent);
-//                }
-//            });
-//        } else {
-//            holder.imageView.setVisibility(View.VISIBLE);
-//            holder.videoView.setVisibility(View.GONE);
-//            Glide.with(context)
-//                    .load(PostDisplayModel.getImageUrl())
-//                    .into(holder.imageView);
-//        }
-
         // Bind like count
-        holder.likeCountTv.setText(context.getString(R.string.like_count, postDisplayModel.getLikeCount()));
+//        holder.likeCountTv.setText(context.getString(R.string.like_count, postDisplayModel.getLikeCount()));
 
         // Bind click listeners for like, comment, and share
         holder.likeBtn.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +95,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
                 }
                 postDisplayModel.setLikeCount(likeCount);
                 // Update UI
-                holder.likeCountTv.setText(context.getString(R.string.like_count, likeCount));
+//                holder.likeCountTv.setText(context.getString(R.string.like_count, likeCount));
                 holder.likeBtn.setChecked(postDisplayModel.isLiked());
                 // Update like status in database or server
             }

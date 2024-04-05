@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
-                if (id == R.id.nav_profile || id == R.id.nav_store || id == R.id.nav_news || id == R.id.nav_booking) {
+                if (id == R.id.nav_profile || id == R.id.nav_store || id == R.id.nav_news || id == R.id.nav_booking || id == R.id.nav_collaboration || id == R.id.nav_about) {
                     navController.navigate(id);
                 } else if (id == R.id.nav_logout) {
                     logout();

@@ -9,37 +9,37 @@
         android:id="@+id/nav_profile"
         android:name="com.example.newsports.Fragments.Profile"
         android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_profile" >
-        <action
-            android:id="@+id/action_nav_profile_to_nav_store"
-            app:destination="@id/nav_store" />
-    </fragment>
+        tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_store"
         android:name="com.example.newsports.Fragments.Store"
         android:label="@string/menu_store"
-        tools:layout="@layout/fragment_store" >
-        <action
-            android:id="@+id/action_nav_store_to_nav_news"
-            app:destination="@id/nav_news" />
-    </fragment>
+        tools:layout="@layout/fragment_store" />
 
     <fragment
         android:id="@+id/nav_news"
         android:name="com.example.newsports.Fragments.NewsFragment"
         android:label="@string/menu_news"
-        tools:layout="@layout/fragment_news" >
-        <action
-            android:id="@+id/action_nav_news_to_nav_booking"
-            app:destination="@id/nav_booking" />
-    </fragment>
+        tools:layout="@layout/fragment_news" />
 
     <fragment
         android:id="@+id/nav_booking"
         android:name="com.example.newsports.Fragments.Booking"
         android:label="Booking"
         tools:layout="@layout/fragment_booking" />
+
+    <fragment
+        android:id="@+id/nav_collaboration"
+        android:name="com.example.newsports.Fragments.Collaboration"
+        android:label="Collaboration"
+        tools:layout="@layout/fragment_collaboration" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.newsports.Fragments.About"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
 
     <fragment
         android:id="@+id/navigation_home"
