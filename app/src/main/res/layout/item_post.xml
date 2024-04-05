@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
     android:orientation="vertical">
 
     <LinearLayout
@@ -51,7 +52,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_below="@id/profileImage"
-        android:scaleType="centerCrop" />
+        android:scaleType="fitXY" />
 
 <!--    <com.google.android.exoplayer2.ui.PlayerView-->
 <!--        android:id="@+id/postVideoView"-->
@@ -95,22 +96,22 @@
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/likeCountTv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="15dp"
-        android:paddingEnd="8dp"
-        android:textStyle="bold" />
+<!--    <TextView-->
+<!--        android:id="@+id/likeCountTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:paddingStart="15dp"-->
+<!--        android:paddingEnd="8dp"-->
+<!--        android:textStyle="bold" />-->
 
-    <TextView
-        android:id="@+id/commentTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="View all comment"
-        android:visibility="gone"
-        tools:ignore="HardcodedText" />
+<!--    <TextView-->
+<!--        android:id="@+id/commentTV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="View all comment"-->
+<!--        android:visibility="gone"-->
+<!--        tools:ignore="HardcodedText" />-->
 
 
 </LinearLayout>

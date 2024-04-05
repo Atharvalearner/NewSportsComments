@@ -197,7 +197,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             titleTextView = itemView.findViewById(R.id.postTitleTextView);
             descriptionTextView = itemView.findViewById(R.id.postDescriptionTextView);
             videoView = itemView.findViewById(R.id.postVideoView); // Change playerView to videoView
-            likeCountTv = itemView.findViewById(R.id.likeCountTv);
+//            likeCountTv = itemView.findViewById(R.id.likeCountTv);
             likeBtn = itemView.findViewById(R.id.likeBtn);
             commentBtn = itemView.findViewById(R.id.commentBtn);
             shareBtn = itemView.findViewById(R.id.shareBtn);
