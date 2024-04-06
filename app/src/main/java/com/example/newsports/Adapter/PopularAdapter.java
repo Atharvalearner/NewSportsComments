@@ -22,11 +22,14 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
    Context context;
    private List<PopularModel> popularModelList;
 
-    public PopularAdapter(FragmentActivity activity, List<PopularModel> popularModelList) {
+//    public PopularAdapter(FragmentActivity activity, List<PopularModel> popularModelList) {
+//        this.context = context;
+//        this.popularModelList = popularModelList;
+//    }
+    public PopularAdapter(Context context, List<PopularModel> popularModelList) {
         this.context = context;
         this.popularModelList = popularModelList;
     }
-
 
     @NonNull
     @Override
