@@ -43,12 +43,12 @@ public class LookingFor extends Fragment {
     private List<LookingforModel> getlookingList() {
         List<LookingforModel> lookingList = new ArrayList<>();
         // Add your event data here
-        lookingList.add(new LookingforModel(1, R.drawable.cricket1,"Cricket","Nashik","9834154073", R.drawable.whatsapp));
-        lookingList.add(new LookingforModel(2, R.drawable.volleyball,"We are seeking a dedicated and experienced volleyball team coach to lead and inspire our team to success. The ideal candidate should have a strong background in volleyball, with coaching experience at the high school or college level","Nashik","9834154073", R.drawable.whatsapp));
-        lookingList.add(new LookingforModel(3, R.drawable.badmintoon,"Badminton partner required for mens double","Nashik","9834154073", R.drawable.whatsapp));
-        lookingList.add(new LookingforModel(4, R.drawable.football,"Looking for a skilled and dedicated football defender to strengthen our team's defense and contribute to our success on the field.","Mumbai","9834154073", R.drawable.whatsapp));
-        lookingList.add(new LookingforModel(5, R.drawable.tennis,"Seeking a male partner for mixed doubles tennis to compete in upcoming tournaments and enhance our team's performance.","Mumbai","9834154073", R.drawable.whatsapp));
-        lookingList.add(new LookingforModel(6, R.drawable.swimming,"Seeking a knowledgeable and enthusiastic swimming coach to train and motivate our team to achieve their full potential in the pool.","Pune","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(1, R.drawable.user1,"Cricket","Nashik","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(2, R.drawable.user2,"We are seeking a dedicated and experienced volleyball team coach to lead and inspire our team to success. The ideal candidate should have a strong background in volleyball, with coaching experience at the high school or college level","Nashik","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(3, R.drawable.user1,"Badminton partner required for mens double","Nashik","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(4, R.drawable.user2,"Looking for a skilled and dedicated football defender to strengthen our team's defense and contribute to our success on the field.","Mumbai","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(5, R.drawable.user1,"Seeking a male partner for mixed doubles tennis to compete in upcoming tournaments and enhance our team's performance.","Mumbai","9834154073", R.drawable.whatsapp));
+        lookingList.add(new LookingforModel(6, R.drawable.user2,"Seeking a knowledgeable and enthusiastic swimming coach to train and motivate our team to achieve their full potential in the pool.","Pune","9834154073", R.drawable.whatsapp));
 
         // Add more events as needed
         return lookingList;

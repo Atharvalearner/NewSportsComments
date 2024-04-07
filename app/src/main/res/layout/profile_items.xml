@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_card_looking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/image_profile"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cricket1" />
+
+        <!--    <TextView
+                android:id="@+id/text_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="15dp"
+                android:layout_toRightOf="@+id/image_looking"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:text="Maharashtra vs Gujrat"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_location_looking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_description"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/image_looking"
+                android:padding="3dp"
+                android:paddingRight="10dp"
+                android:text="Nashik"
+                android:textStyle="bold" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/image_whatsapp"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_below="@+id/text_location_looking"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginLeft="18dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_toRightOf="@+id/image_looking"-->
+<!--                android:background="#207509"-->
+<!--                android:padding="3dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:src="@drawable/whatsapp" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/text_phone"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/text_location_looking"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_toRightOf="@+id/image_whatsapp"-->
+<!--                android:padding="3dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:text="9834154073"-->
+<!--                android:textStyle="bold" />-->
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
